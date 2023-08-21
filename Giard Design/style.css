@@ -1,0 +1,551 @@
+/* Styl dla tła nawigacji */
+.navbar {
+    background-color: #fff;
+}
+
+/* Styl dla kontenera nawigacji */
+.navbar-container {
+    width: 95%;
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+}
+
+/* Styl dla logo firmy */
+.navbar-brand {
+    font-weight: bold;
+    color: black; /* Kolor tekstu logo */
+    text-decoration: none; /* Usunięcie podkreślenia z linku */
+}
+
+/* Styl dla linków nawigacyjnych */
+.navbar-nav .nav-item {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styl dla linków nawigacyjnych - kolor i styl tekstu */
+.navbar-nav .nav-item a {
+    color: black; /* Kolor tekstu linków */
+    text-decoration: none; /* Usunięcie podkreślenia z linków */
+}
+
+/* Styl dla rozwijanego menu */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styl dla animowanej strzałki w dół */
+.navbar-nav .nav-item.dropdown .dropdown-toggle::after {
+    content: ""; /* Strzałka w dół */
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out; /* Dodanie animacji */
+    border: none; /* Usunięcie linii nad strzałką */
+    font-size: 14px; /* Zmniejszenie rozmiaru strzałki dla lepszego wyglądu */
+    transform: rotate(0deg); /* Początkowy obrót strzałki */
+    position: relative;
+    top: 4px;
+    left: -4px;
+    animation: bounce 0.5s alternate infinite; /* Animacja skoku */
+}
+
+.fa-chevron-down
+{
+    animation: bounce 0.5s alternate infinite; /* Animacja skoku */
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-4px);
+    }
+}
+
+/* Styl dla ikony lupy */
+.navbar-search-icon {
+    font-size: 18px;
+    margin-left: 15px;
+    color: black; /* Kolor ikony lupy */
+    cursor: pointer;
+}
+
+/* Styl dla widocznej wyszukiwarki */
+.navbar-search-input.active {
+    width: 150px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-search-input
+{
+    width: 0;
+    visibility: hidden;
+}
+
+/* Styl dla sekcji Hero-block */
+.hero-block {
+    background-color: #DCC1AB;
+    overflow: hidden; /* Ukryj elementy poza granicami */
+}
+
+
+
+/* Styl dla treści w lewej kolumnie */
+.intro-content {
+    padding: 10%;
+}
+
+/* Styl dla obrazka w prawej kolumnie */
+.intro-image {
+    position: relative;
+    height: 100%; /* Wypełnij całą wysokość sekcji */
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    overflow: visible; /* Pozwól na przekraczanie granic elementu */
+}
+
+/* Styl dla obrazka w prawej kolumnie */
+.intro-image img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0;
+    margin-right: -20px;
+}
+
+.slider-arrows {
+    position: absolute; /* Ustaw pozycję absolutną wewnątrz intro-image */
+    bottom: 0; /* Umieść na dole */
+    right: 0; /* Umieść na prawo */
+    margin: 0px; /* Dodaj margines */
+}
+
+.slider-arrows span {
+    display: inline-block;
+    margin: 10 20px; /* Margines między strzałkami */
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Styl dla przycisków slajdera */
+.prev-slide, .next-slide {
+    background-color: #F5F0EC; /* Zmiana koloru tła */
+    padding: 10px 20px; /* Padding przycisku */
+    transition: background-color 0.3s ease-in-out; /* Dodanie płynnej zmiany koloru */
+}
+
+.prev-slide:hover, .next-slide:hover {
+    background-color: #1B5B31; /* Kolor tła przy najechaniu myszką */
+}
+
+.slick-prev, .slick-next {
+    background-color: #F5F0EC; /* Zmiana koloru tła */
+    padding: 10px 20px; /* Padding przycisku */
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Dodanie płynnej zmiany koloru */
+    position: absolute; /* Ustawienie pozycji absolutnej */
+    bottom: 0; /* Umieszczenie na dole */
+    right: 0; /* Umieszczenie na prawo */
+    margin: 0px; /* Margines */
+}
+
+.slick-prev {
+    z-index: 1;
+    margin-right: 50px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #1B5B31; /* Kolor tła przy najechaniu myszką */
+    color: white; /* Zmiana koloru tekstu przy najechaniu myszką */
+}
+
+.btn-rounded {
+    border-radius: 50px; /* Zaokrąglenie */
+    padding: 10px 20px;
+    margin-right: 10px; /* Odstęp między przyciskami */
+    margin-top: 20px;
+}
+
+/* Styl dla przycisku pierwszego */
+.btn-primary-rounded {
+    background-color: #1B5B31;
+    color: #F5F0EC;
+    border: none;
+}
+
+/* Styl dla przycisku drugiego */
+.btn-secondary-rounded {
+    background-color: transparent;
+    border: 2px solid #1B5B31;
+    color: #1B5B31;
+}
+
+/* Styl dla sekcji Oferta-block */
+.oferta-block {
+    background-color: #F5F0EC;
+    padding: 80px 0; /* Dodaj odpowiednie wcięcie od góry i dołu */
+}
+
+/* Styl dla nagłówka "Oferta" */
+.offer-heading {
+    color: #1B5B31; /* Kolor zielony */
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Styl dla podnagłówka "Działamy kompleksowo" */
+.offer-subheading {
+    font-weight: bold;
+    font-size: 48px;
+    color: #111111; /* Kolor zielony */
+    margin-bottom: 20px;
+}
+
+/* Styl dla opisu oferty */
+.offer-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111111; /* Kolor tekstu */
+}
+
+/* Styl dla szerokości kontenera */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styl dla kontenera kart */
+.card-container {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styl dla poszczególnych kart */
+.card {
+    width: calc(33.33% - 60px); /* 3 karty w równym podziale z odstępem */
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* Zaokrąglenie karty */
+    transition: background-color 0.3s ease-in-out; /* Dodanie płynnej zmiany koloru */
+    aspect-ratio: 1 / 1; /* Ustalenie proporcji wysokość/szerokość */
+}
+
+.card:hover {
+    background-color: #3ebe6b63; /* Kolor tła przy najechaniu myszką */
+    color: #FFFFFF; /* Kolor tekstu po najechaniu myszką */
+}
+
+/* Styl dla obrazka w karcie */
+.card-img img {
+    max-width: 100%;
+    margin-top: 10%;
+}
+
+/* Styl dla tytułu karty */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10%;
+}
+
+/* Styl dla treści karty */
+.card-text {
+    font-size: 16px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+/* Styl dla linku w karcie */
+.card-link {
+    color: #1B5B31;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.card-link i {
+    margin-left: 5px;
+}
+
+/* Styl dla sekcji firm-block */
+.firm-block {
+    background-color: #1F5C30;
+    color: white;
+}
+
+/* Styl dla obrazka */
+.firm-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.firm-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    margin-left: -20px;
+}
+
+/* Styl dla treści */
+.firm-content {
+    padding-left: 30px;
+    width: 85%;
+}
+
+.firm-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.firm-content p {
+    margin-bottom: 20px;
+}
+
+.btn-arrow {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-arrow:hover {
+    background-color: white;
+    color: #1F5C30;
+}
+
+.space-top {
+    margin-top: 5%;
+}
+
+.col-image{
+    width: 30%;
+}
+
+.realizacje-block{
+    background-color: #DAC3AB;
+    padding-top: 70px;
+    
+}
+
+/* Styl dla sekcji image-grid */
+.image-grid {
+    background-color: #DAC3AB;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Styl dla elementu obrazka */
+.image-item {
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styl dla tytułów sekcji */
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1B5B31;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.section-subtitle {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Styl dla przycisku "Rozwiń" */
+.btn-expand {
+    align-content: center;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-expand:hover {
+    background-color: white;
+    color: #1F5C30;
+}
+
+
+/* Styl dla sekcji contact-section */
+.contact-section {
+    background-color: #F5F0EC;
+    padding: 100px 0;
+    color: white;
+}
+
+/* Styl dla zawartości sekcji contact-content */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #1B5B31;
+    padding: 100px;
+}
+
+/* Styl dla lewej części contact-left */
+.contact-left {
+    width: 70%;
+}
+
+.contact-left h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styl dla prawej części contact-right */
+.contact-right {
+    width: 30%;
+    text-align: right;
+}
+
+.contact-right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styl dla przycisku Instagram */
+.instagram-button {
+    background-color: white;
+    color: #1B5B31;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.instagram-button:hover {
+    background-color: #1B5B31;
+    color: white;
+}
+
+/* Styl dla całego footera */
+.footer {
+    background-color: #000000;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+/* Styl dla zawartości footera */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styl dla lewej części footera */
+.footer-left {
+    width: 50%;
+}
+
+/* Styl dla logo w footerze */
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styl dla prawej części footera */
+.footer-right {
+    width: 50%;
+    text-align: right;
+}
+
+/* Styl dla tekstu w footerze */
+.footer-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styl dla przycisku w footerze */
+.btn {
+    display: inline-block;
+    background-color: #1B5B31;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Styl dla poziomej linii */
+.footer-line {
+    border-top: 1px solid #1B5B31;
+    margin: 30px 0;
+}
+
+/* Styl dla linków w footerze */
+.footer-link {
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Styl dla kontaktów w footerze */
+.footer-contact {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Styl dla dolnej części footera */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Styl dla tekstu praw zastrzeżonych */
+.footer-copyright {
+    font-size: 14px;
+}
+
+/* Styl dla tekstu made by */
+.footer-made {
+    font-size: 14px;
+}

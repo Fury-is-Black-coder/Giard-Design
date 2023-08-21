@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to CarouFredSel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/caroufredsel/6.2.1/jquery.carouFredSel.min.css">
+    <!-- Link to CarouFredSel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/caroufredsel/6.2.1/jquery.carouFredSel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>GiardDesign</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <a class="navbar-brand" href="#"><b>giard</b>design</a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Oferta <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <!-- Zawartość menu rozwijanego -->
+                                Option 1<br>
+                                Option 2<br>
+                                Option 3<br>
+                                Option 4
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O firmie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Realizacje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-search-icon" href="#">
+                                <i class="fas fa-search"></i> <!-- Tu możesz użyć ikony lupy, na przykład z Font Awesome -->
+                            </a>
+                            <input type="text" class="navbar-search-input" placeholder="Szukaj">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <!-- Tutaj umieść swoje slajdy -->
+            <section class="hero-block">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="intro-content">
+                            <h2>Nowoczesna aranżacja Twojego ogrodu </h2>
+                            <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                            <button class="btn btn-primary-rounded btn-rounded">Skontaktuj się z nami</button>
+                            <button class="btn btn-secondary-rounded btn-rounded">Zobacz nasze realizacje 🡣</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="intro-image">
+                            <img src="img/giarddesign-intro.png" alt="Intro Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero-block">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="intro-content">
+                            <h2>Nowoczesna aranżacja Twojego ogrodu </h2>
+                            <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                            <button class="btn btn-primary-rounded btn-rounded">Skontaktuj się z nami</button>
+                            <button class="btn btn-secondary-rounded btn-rounded">Zobacz nasze realizacje 🡣</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="intro-image">
+                            <img src="img/giarddesign-intro.png" alt="Intro Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="oferta-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="offer-heading">Oferta</h2>
+                        <p class="offer-subheading">Działamy kompleksowo</p>
+                        <p class="offer-description">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Tutaj możesz dodać obrazek lub inny kontent dla drugiej połowy sekcji -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/Icon-projekty.png" alt="Obrazek 1">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">Projekty</p>
+                        <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        <a href="#" class="card-link">Dowiedz się więcej <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/Icon-wizualizacje.png" alt="Obrazek 1">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">Projekty</p>
+                        <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        <a href="#" class="card-link">Dowiedz się więcej <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/Icon-realizacje.png" alt="Obrazek 1">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title">Projekty</p>
+                        <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        <a href="#" class="card-link">Dowiedz się więcej <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <!-- Dodaj jeszcze dwie karty w taki sam sposób -->
+            </div>
+        </section>
+
+        <section class="firm-block">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="firm-image">
+                        <img src="img/Photo (1).png" alt="Firm Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="firm-content">
+                        <p class="small-text">O firmie</p>
+                        <h3 class="space-top">Tworzymy z pasją</h3>
+                        <p class="space-top">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                        <a href="#" class="btn-arrow space-top">Poznaj nas bliżej <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="realizacje-block expanded">
+            <div class="container">
+                <h2 class="section-title">Realizacje</h2>
+                <h3 class="section-subtitle">Nasze Projekty</h3>
+            </div>
+            
+
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="img/projekty-1.png" alt="Image 1">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-2.png" alt="Image 2">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-3.png" alt="Image 3">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-4.png" alt="Image 4">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-5.png" alt="Image 5">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-6.png" alt="Image 6">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-7.png" alt="Image 7">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-8.png" alt="Image 8">
+                </div>
+                <div class="image-item">
+                    <img src="img/projekty-9.png" alt="Image 9">
+                </div>
+            </div>
+
+            <div class="expand-button">
+                <button class="btn-expand">
+                    Rozwiń <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h3>Zostańmy w kontakcie!</h3>
+                    <p>Znajdziesz nas na Instagramie</p>
+                </div>
+                <div class="contact-right">
+                    <p>Śledź nasze najnowsze realizacje!</p>
+                    <a href="#" class="instagram-button">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-logo">giardDesign</p>
+            </div>
+            <div class="footer-right">
+                <p class="footer-text">Daj znać, co możemy dla Ciebie zrobić!</p>
+                <a href="#" class="btn btn-green">Skontaktuj się z nami</a>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-links">
+            <div class="footer-links-left">
+                <p class="footer-link">Kontakt</p>
+                <p class="footer-link">Instagram</p>
+                <p class="footer-link">Facebook</p>
+                <p class="footer-link">LinkedIn</p>
+            </div>
+            <div class="footer-links-right">
+                <p class="footer-contact">000-000-000</p>
+                <p class="footer-contact">giarddesign@kontakt.pl</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Prawa zastrzeżone © 2022</p>
+            <p class="footer-made">made by adRespect.pl</p>
+        </div>
+        <p>&copy; 2023 GiardDesign. All rights reserved. Created by DevColibri.pl. Strona powstała w procesie rekrutacyjnym dla agencji adRespect.pl.</p>
+    </footer>
+    <!-- Link to Bootstrap JS, Popper.js, and jQuery (required for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.slider').slick({
+        // Opcje konfiguracyjne slajdera
+        prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right"></i></span>'
+    });
+});
+    </script>
+    <script>
+        // Początkowo ukryj sekcję realizacje-block i ustaw jej wysokość na 20% viewportu
+        const realizacjeBlock = document.querySelector('.realizacje-block');
+  const rozwinButton = document.querySelector('.rozwin-button');
+
+  // Funkcja do rozwijania i zwijania sekcji
+  function toggleRealizacje() {
+    if (realizacjeBlock.classList.contains('expanded')) {
+      realizacjeBlock.classList.remove('expanded');
+      rozwinButton.innerHTML = 'Rozwiń <i class="fas fa-chevron-down"></i>';
+    } else {
+      realizacjeBlock.classList.add('expanded');
+      rozwinButton.innerHTML = 'Zwiń <i class="fas fa-chevron-up"></i>';
+    }
+  }
+
+  // Ustaw słuchacza zdarzeń na kliknięcie przycisku "Rozwiń"
+  rozwinButton.addEventListener('click', toggleRealizacje);
+      </script>
+</body>
+</html>
